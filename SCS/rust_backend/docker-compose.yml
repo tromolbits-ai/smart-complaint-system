@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: scs_postgres_postgis
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: scs_bandarlampung
+    ports:
+      - "5432:5432"
+    volumes:
+      - scs_pgdata:/var/lib/postgresql/data
+      - ./migrations/20261110000000_initial_schema.sql:/docker-entrypoint-initdb.d/01_init.sql
+    restart: unless-stopped
+
+  api:
+    build: .
+    container_name: scs_rust_api
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres:password123@db:5432/scs_bandarlampung
+      PORT: 8080
+      JWT_SECRET: scs_bandarlampung_smartcity_secret_key_2026
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+volumes:
+  scs_pgdata:
+

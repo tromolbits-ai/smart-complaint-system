@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#254872","primary":"#002549","on-primary":"#ffffff","tertiary-fixed-dim":"#60d9d3","secondary-fixed":"#cfe5ff","on-tertiary":"#ffffff","surface-dim":"#cbdbf5","primary-fixed-dim":"#a8c8fa","secondary":"#00629d","surface-container-high":"#dce9ff","on-secondary":"#ffffff","tertiary-container":"#004240","primary-fixed":"#d4e3ff","surface-tint":"#3f608c","on-primary-container":"#86a6d6","on-secondary-fixed":"#001d33","on-surface-variant":"#43474f","error-container":"#ffdad6","on-background":"#0b1c30","on-secondary-container":"#004c7b","outline":"#73777f","tertiary":"#002a29","surface-bright":"#f8f9ff","inverse-primary":"#a8c8fa","on-tertiary-fixed-variant":"#00504d","surface-variant":"#d3e4fe","on-error-container":"#93000a","outline-variant":"#c3c6d0","error":"#ba1a1a","secondary-fixed-dim":"#98cbff","secondary-container":"#7abeff","background":"#f8f9ff","on-tertiary-fixed":"#00201f","inverse-surface":"#213145","surface-container":"#e5eeff","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-surface":"#0b1c30","on-tertiary-container":"#34b6b1","primary-container":"#163b65","tertiary-fixed":"#7ef5ef","on-secondary-fixed-variant":"#004a77","surface-container-highest":"#d3e4fe","on-error":"#ffffff","on-primary-fixed":"#001c3a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","space-md":"1rem","gutter":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"headline-sm":["Inter"],"headline-xl":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"label-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-space-lg bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">admin_panel_settings</span></div><div><span class="font-label-lg text-label-lg font-bold text-primary block leading-none">LaporBDL</span><span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide uppercase mt-space-xs block">SUPER ADMIN v2.4 Ent.</span></div></div></div><nav class="px-space-md py-space-lg flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">PENGATURAN PENGGUNA &amp; AKSES</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manajemen-pengguna-warga" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-label-lg text-label-lg">Pengguna Warga</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manajemen-admin-staf-opd" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Admin &amp; Staf OPD</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="peran-hak-akses" href="#"><span class="material-symbols-outlined text-[20px]">shield_person</span><span class="font-label-lg text-label-lg">Peran &amp; Hak Akses</span></a><div class="px-space-sm pt-space-md pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">MASTER DATA &amp; LAYANAN</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kategori-taksonomi-aduan" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-lg text-label-lg">Kategori &amp; Taksonomi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manajemen-perangkat-daerah-opd" href="#"><span class="material-symbols-outlined text-[20px]">domain</span><span class="font-label-lg text-label-lg">Perangkat Daerah / OPD</span></a><div class="px-space-sm pt-space-md pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">SISTEM &amp; AUDIT</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="konfigurasi-sistem-integrasi" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Konfigurasi &amp; Integrasi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="log-aktivitas-jejak-audit" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Log &amp; Jejak Audit</span></a></nav></div><div class="p-space-md bg-surface-container-low m-space-md rounded-xl"><div class="flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">PostGIS DB</span><span class="font-label-sm text-label-sm font-semibold text-tertiary-fixed-dim bg-tertiary-container px-space-sm py-0.5 rounded-full">Terkoneksi</span></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Auto Backup</span><span class="font-label-sm text-label-sm font-medium text-secondary">Aktif (02:00)</span></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Uptime Server</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">99.98%</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 z-40 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="h-9 px-space-sm rounded bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-semibold text-primary">PEMDA BD. LAMPUNG</div><span class="text-outline text-label-sm font-label-sm">×</span><div class="h-9 px-space-sm rounded bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-semibold text-primary">UNIV TEKNOKRAT</div></div><div class="h-8 w-px bg-surface-container-high"></div><div><span class="font-headline-sm text-headline-sm text-primary block leading-tight font-bold">Smart Complaint System</span><span class="font-label-sm text-label-sm text-on-surface-variant block">Super Admin Console &amp; Tata Kelola Sistem Kota Bandar Lampung</span></div></div><div class="flex-1 max-w-xl flex items-center gap-space-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-11 pl-10 pr-space-md bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-container-lowest" placeholder="Cari pengguna, role, modul, atau log audit..." type="text"/></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold">SPBE TLS 1.3</span></div><a class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold hover:bg-error hover:text-on-error transition-colors" href="tel:112"><span class="material-symbols-outlined text-[16px]">sos</span><span>112</span></a></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><span class="hidden xl:inline font-medium">Secure Env</span></div><div class="relative"><button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><span class="absolute 0 top-0 right-0 w-4 h-4 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold">5</span></div><div class="h-8 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right"><span class="font-label-md text-label-md font-bold text-primary block leading-tight">Dra. Rahayu S.T., M.Kom</span><span class="font-label-sm text-label-sm text-on-surface-variant block">Super Admin Utama / Sekda Diskominfotik</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-5rem)] p-space-lg"><div class="flex flex-col w-full">
+<!-- Top Command Ribbon & Header Context -->
+<section class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg mb-space-xl">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">RBAC POLICY ENGINE</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">verified_user</span> ISO 27001 / SPBE Compliance Level 4
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Manajemen Peran &amp; Hak Akses</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Konfigurasi granular izin sistem, pembatasan akses data warga, verifikasi disposisi, hingga otorisasi ekspor laporan tingkat eksekutif secara real-time.
+      </p>
+</div>
+<!-- Main Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-colors shadow-sm" id="btn-audit">
+<span class="material-symbols-outlined text-[18px]">fingerprint</span>
+<span>Audit Akses Kriptografis</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary font-label-lg text-label-lg flex items-center gap-space-xs transition-colors shadow-sm" id="btn-policy">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Terapkan Kebijakan Keamanan</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-all shadow-md active:scale-95" id="btn-new-role">
+<span class="material-symbols-outlined text-[20px]">add_moderator</span>
+<span>+ Buat Peran Baru</span>
+</button>
+</div>
+</section>
+<!-- Interactive Security Metric & Sync Indicator -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-xl">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant font-semibold">Total Pengguna Terpetakan</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">149,056</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">manage_accounts</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant font-semibold">Kebijakan Masking NIK</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Enforced (SHA-256)</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-container flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[22px]">lock_reset</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant font-semibold">Token Sesi SP4N API</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Valid (14h tersisa)</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">sync_alt</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant font-semibold">Anomali Privilege Esc.</span>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">0 Terdeteksi</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">shield</span>
+</div>
+</div>
+</div>
+<!-- Role Selector Cards Carousel / Grid -->
+<section class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<h2 class="font-label-lg text-label-lg font-bold text-primary uppercase tracking-wide">Pilih Profil Peran &amp; Segmentasi Hak</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Klik profil peran untuk menyaring matriks</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md">
+<!-- Role 1: Super Admin -->
+<div class="role-card cursor-pointer group bg-primary text-on-primary p-space-md rounded-xl shadow-md transition-all relative overflow-hidden" data-role="superadmin">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</span>
+<span class="px-space-xs py-0.5 rounded text-[10px] font-bold bg-tertiary-fixed text-on-tertiary-fixed tracking-wider">ROOT</span>
+</div>
+<div class="font-headline-sm text-[16px] leading-tight font-bold mb-1">Super Admin</div>
+<div class="font-label-sm text-label-sm text-primary-fixed-dim mb-space-xs">Tingkat Kota BDL</div>
+<div class="font-label-md text-label-md font-bold text-secondary-fixed">4 Pengguna Aktif</div>
+<div class="mt-space-sm pt-space-xs border-t-0 bg-primary-container/40 -mx-space-md px-space-md py-1.5 text-[11px] text-primary-fixed-dim flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span> Full Control Master Data
+        </div>
+</div>
+<!-- Role 2: Verifikator Kota -->
+<div class="role-card cursor-pointer group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl shadow-sm transition-all" data-role="verifikator">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+</span>
+<span class="px-space-xs py-0.5 rounded text-[10px] font-bold bg-surface-container text-on-surface-variant">TRIAGE</span>
+</div>
+<div class="font-headline-sm text-[16px] leading-tight font-bold text-primary mb-1">Verifikator Kota</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-space-xs">Diskominfo Kota</div>
+<div class="font-label-md text-label-md font-bold text-secondary">18 Pengguna Aktif</div>
+<div class="mt-space-sm pt-space-xs bg-surface-container -mx-space-md px-space-md py-1.5 text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Sensor NIK &amp; Disposisi OPD
+        </div>
+</div>
+<!-- Role 3: Admin Dinas Teknis (OPD) -->
+<div class="role-card cursor-pointer group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl shadow-sm transition-all" data-role="adminopd">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</span>
+<span class="px-space-xs py-0.5 rounded text-[10px] font-bold bg-surface-container text-on-surface-variant">SATKER</span>
+</div>
+<div class="font-headline-sm text-[16px] leading-tight font-bold text-primary mb-1">Admin OPD</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-space-xs">Dinas PUPR, DLH, dll</div>
+<div class="font-label-md text-label-md font-bold text-secondary">36 Pengguna Aktif</div>
+<div class="mt-space-sm pt-space-xs bg-surface-container -mx-space-md px-space-md py-1.5 text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Terbitkan SPT &amp; BAST
+        </div>
+</div>
+<!-- Role 4: Koordinator Lapangan (TRC) -->
+<div class="role-card cursor-pointer group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl shadow-sm transition-all" data-role="trc">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">handyman</span>
+</span>
+<span class="px-space-xs py-0.5 rounded text-[10px] font-bold bg-surface-container text-on-surface-variant">LAPANGAN</span>
+</div>
+<div class="font-headline-sm text-[16px] leading-tight font-bold text-primary mb-1">Koordinator TRC</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-space-xs">Tim Reaksi Cepat</div>
+<div class="font-label-md text-label-md font-bold text-secondary">72 Pengguna Aktif</div>
+<div class="mt-space-sm pt-space-xs bg-surface-container -mx-space-md px-space-md py-1.5 text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Geotag &amp; Radio Disposisi
+        </div>
+</div>
+<!-- Role 5: Pimpinan / Walikota & Sekda -->
+<div class="role-card cursor-pointer group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl shadow-sm transition-all" data-role="eksekutif">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+<span class="px-space-xs py-0.5 rounded text-[10px] font-bold bg-secondary-fixed text-on-secondary-fixed">EXEC</span>
+</div>
+<div class="font-headline-sm text-[16px] leading-tight font-bold text-primary mb-1">Pimpinan Kota</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-space-xs">Walikota, Sekda, Asisten</div>
+<div class="font-label-md text-label-md font-bold text-secondary">6 Pengguna Aktif</div>
+<div class="mt-space-sm pt-space-xs bg-surface-container -mx-space-md px-space-md py-1.5 text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Analitik &amp; TTE BSrE
+        </div>
+</div>
+<!-- Role 6: Warga Masyarakat (Citizen) -->
+<div class="role-card cursor-pointer group bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl shadow-sm transition-all" data-role="warga">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</span>
+<span class="px-space-xs py-0.5 rounded text-[10px] font-bold bg-surface-container text-on-surface-variant">PUBLIC</span>
+</div>
+<div class="font-headline-sm text-[16px] leading-tight font-bold text-primary mb-1">Warga Masyarakat</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mb-space-xs">KTP Terverifikasi</div>
+<div class="font-label-md text-label-md font-bold text-secondary">148,920 Akun</div>
+<div class="mt-space-sm pt-space-xs bg-surface-container -mx-space-md px-space-md py-1.5 text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Lapor &amp; Skor Kepuasan IKM
+        </div>
+</div>
+</div>
+</section>
+<!-- Granular Matrix Filter Bar -->
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-md">
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<span class="material-symbols-outlined text-outline text-[20px]">filter_list</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">Matriks Otorisasi</span>
+<div class="flex items-center gap-space-xs ml-space-sm">
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">Semua Kategori</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-semibold">Pengaduan &amp; Triage</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-semibold">Master Data</button>
+<button class="px-space-sm py-1 rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-semibold">Analitik &amp; Audit</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end">
+<button class="px-space-sm py-1.5 rounded bg-surface-container-low text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1 hover:bg-surface-container" id="toggle-all-view">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Tampilkan Skema Masking Lengkap
+      </button>
+</div>
+</div>
+<!-- Permissions Matrix Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<!-- Table Head -->
+<thead>
+<tr class="bg-surface-container-low text-on-surface">
+<th class="p-space-md font-label-lg text-label-lg font-bold w-1/4">Modul &amp; Fitur Sistem</th>
+<th class="p-space-md font-label-lg text-label-lg font-bold w-1/4">Deskripsi Batasan Izin</th>
+<th class="p-space-md font-label-lg text-label-lg font-bold text-center">Super Admin</th>
+<th class="p-space-md font-label-lg text-label-lg font-bold text-center">Verifikator (Diskominfo)</th>
+<th class="p-space-md font-label-lg text-label-lg font-bold text-center">Admin Dinas (OPD)</th>
+<th class="p-space-md font-label-lg text-label-lg font-bold text-center">Koord. TRC Lapangan</th>
+<th class="p-space-md font-label-lg text-label-lg font-bold text-center">Pimpinan Eksekutif</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- GROUP 1: MODUL PENGADUAN & TRIAGE -->
+<tr class="bg-surface-container/60">
+<td class="px-space-md py-space-sm" colspan="7">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">campaign</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">1. MODUL PENGADUAN &amp; TRIAGE LAPORAN</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[11px] font-medium">5 Otoritas Izin</span>
+</div>
+</td>
+</tr>
+<!-- Row 1.1: Buat Aduan Baru -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Buat Aduan Baru (Create Ticket)</div>
+<span class="font-label-sm text-label-sm text-outline">mod_ticket.create</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kemampuan menginput tiket keluhan baru dari kanal warga atau portal loket walk-in.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Verifikator -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Admin OPD -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Koordinator Lapangan -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</label>
+</td>
+<!-- Pimpinan -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</label>
+</td>
+</tr>
+<!-- Row 1.2: Verifikasi & Sensor NIK/Geotag -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-lowest">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Verifikasi &amp; Sensor NIK/Geotag</div>
+<span class="font-label-sm text-label-sm text-outline">mod_triage.redact_pii</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Membuka data mentah NIK, foto KTP pelapor, dan menyamarkan data publik sebelum eskalasi.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+<span class="text-[10px] font-bold text-primary mt-1">Full Raw</span>
+</div>
+</td>
+<!-- Verifikator -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+<span class="text-[10px] font-bold text-primary mt-1">Full Redact</span>
+</div>
+</td>
+<!-- Admin OPD -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">visibility_off</span>
+</span>
+<span class="text-[10px] font-semibold text-secondary mt-1">Masked NIK</span>
+</div>
+</td>
+<!-- Koordinator Lapangan -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+<!-- Pimpinan -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">visibility_off</span>
+</span>
+<span class="text-[10px] font-semibold text-secondary mt-1">Masked NIK</span>
+</div>
+</td>
+</tr>
+<!-- Row 1.3: Disposisi ke Satker -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Disposisi ke Satker (Assign OPD)</div>
+<span class="font-label-sm text-label-sm text-outline">mod_triage.forward_opd</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menentukan satker penanggung jawab teknis, SLA pengerjaan, dan prioritas kegentingan aduan.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Verifikator -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Admin OPD -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+</span>
+<span class="text-[10px] font-medium text-on-surface-variant mt-1">Forward Sub-Unit</span>
+</div>
+</td>
+<!-- Koordinator Lapangan -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+<!-- Pimpinan -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+</tr>
+<!-- Row 1.4: Eksekusi & Update Progres Lapangan -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-lowest">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Update Progres Lapangan</div>
+<span class="font-label-sm text-label-sm text-outline">mod_field.update_progress</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Check-in lokasi GPS, upload foto kondisi 0%, 50%, 100%, serta log kendala teknis cuaca/material.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Verifikator -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+<!-- Admin OPD -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Koordinator Lapangan -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+<span class="text-[10px] font-bold text-tertiary mt-1">Geotag Mandatori</span>
+</div>
+</td>
+<!-- Pimpinan -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+</tr>
+<!-- Row 1.5: Tutup Tiket & Terbitkan BAST -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Penerbitan BAST &amp; Tutup Tiket</div>
+<span class="font-label-sm text-label-sm text-outline">mod_ticket.resolve_bast</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Membuat dokumen digital Berita Acara Serah Terima Pekerjaan dan mengubah status menjadi 'Selesai'.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Verifikator -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+<!-- Admin OPD -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+<span class="text-[10px] font-semibold text-primary mt-1">Otoritas BAST</span>
+</div>
+</td>
+<!-- Koordinator Lapangan -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</span>
+<span class="text-[10px] font-medium text-on-surface-variant mt-1">Draft Usulan</span>
+</div>
+</td>
+<!-- Pimpinan -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+</tr>
+<!-- GROUP 2: MASTER DATA & TATA KELOLA -->
+<tr class="bg-surface-container/60">
+<td class="px-space-md py-space-sm" colspan="7">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">database</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">2. MASTER DATA &amp; TATA KELOLA SISTEM</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[11px] font-medium">3 Otoritas Izin</span>
+</div>
+</td>
+</tr>
+<!-- Row 2.1: Kelola Satker OPD -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Kelola Satker &amp; Dinas OPD</div>
+<span class="font-label-sm text-label-sm text-outline">mod_master.opd_nodes</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menambah struktur organisasi baru, pemetaan hierarki kecamatan, dan pembagian wilayah posko.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Verifikator -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+<!-- Admin OPD -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+<!-- Koordinator Lapangan -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+<!-- Pimpinan -->
+<td class="p-space-md text-center">
+<span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</span>
+</td>
+</tr>
+<!-- Row 2.2: Konfigurasi Kategori Aduan & SLA -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-lowest">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Konfigurasi Taksonomi &amp; SLA</div>
+<span class="font-label-sm text-label-sm text-outline">mod_master.sla_matrix</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mengatur ambang waktu resolusi (contoh: Jalan Rusak Berat max 48 jam) dan eskalasi otomatis.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Others No -->
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+</tr>
+<!-- Row 2.3: Kelola Akun Pegawai & NIP -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Kelola Akun Pegawai &amp; NIP</div>
+<span class="font-label-sm text-label-sm text-outline">mod_master.staff_identities</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Penerbitan kredensial 2FA bagi aparatur ASN, mutasi unit kerja, dan revoke session darurat.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Others No -->
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+</tr>
+<!-- GROUP 3: ANALITIK, LAPORAN & AUDIT -->
+<tr class="bg-surface-container/60">
+<td class="px-space-md py-space-sm" colspan="7">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">analytics</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-primary">3. ANALITIK, LAPORAN &amp; AUDIT KEAMANAN</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-[11px] font-medium">3 Otoritas Izin</span>
+</div>
+</td>
+</tr>
+<!-- Row 3.1: Unduh Laporan Eksekutif PDF -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Unduh Laporan Eksekutif (PDF/BI)</div>
+<span class="font-label-sm text-label-sm text-outline">mod_bi.export_executive</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rekapitulasi performa penanganan aduan tingkat Walikota berstempel barcode resmi.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Verifikator -->
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<!-- Admin OPD -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="w-8 h-8 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</span>
+<span class="text-[10px] font-medium text-secondary mt-1">Khusus Satker</span>
+</div>
+</td>
+<!-- Koordinator Lapangan -->
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<!-- Pimpinan -->
+<td class="p-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+<span class="text-[10px] font-bold text-tertiary mt-1">Full Kota PDF</span>
+</div>
+</td>
+</tr>
+<!-- Row 3.2: Akses Log Audit & IP Address -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-lowest">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Akses Log Audit &amp; IP Forensik</div>
+<span class="font-label-sm text-label-sm text-outline">mod_sec.audit_trail</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Melihat riwayat jejak digital transaksi data, IP address ASN pengakses, dan hash integritas berkas.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Others No -->
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+</tr>
+<!-- Row 3.3: Konfigurasi SP4N-LAPOR & Webhook -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="p-space-md">
+<div class="font-label-lg text-label-lg font-bold text-primary">Konfigurasi SP4N-LAPOR! API</div>
+<span class="font-label-sm text-label-sm text-outline">mod_integ.sp4n_gateway</span>
+</td>
+<td class="p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pengaturan Webhook REST API, pembaruan Secret Token KemenPAN-RB, dan routing sinkronisasi nasional.</p>
+</td>
+<!-- Super Admin -->
+<td class="p-space-md text-center">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="perm-checkbox sr-only" type="checkbox"/>
+<span class="w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</span>
+</label>
+</td>
+<!-- Others No -->
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+<td class="p-space-md text-center"><span class="w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs mx-auto"><span class="material-symbols-outlined text-[18px]">close</span></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Live Permission Simulation & Context Pane -->
+<div class="p-space-lg bg-surface-container-low flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-primary block">Prinsip Least-Privilege Berjalan Aktif</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Semua perubahan pada matriks peran akan memicu invalidasi token JWT berdurasi 15 menit.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm shrink-0">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>SHA-256 Digest State: <code class="font-mono text-primary font-bold">e7a1b...88c4</code></span>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Sticky Action Bar -->
+<div class="sticky bottom-6 z-30 bg-surface-container-lowest shadow-xl rounded-xl p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md transition-all">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-primary block leading-tight">Kebijakan Akses tersinkronisasi ke SPBE v2.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block" id="unsaved-badge">Belum ada perubahan yang ditangguhkan</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors" id="btn-cancel">
+        Batalkan
+      </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-all shadow-md" id="btn-save">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Simpan Perubahan Matriks Izin</span>
+</button>
+</div>
+</div>
+<!-- Toast / Notification Element -->
+<div class="fixed bottom-24 right-8 z-50 bg-primary text-on-primary px-space-lg py-space-md rounded-xl shadow-xl flex items-center gap-space-sm transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300" id="toast">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[22px]">check_circle</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold block" id="toast-title">Perubahan Disimpan!</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim block" id="toast-desc">Kebijakan baru telah direplikasi ke seluruh server posko BDL.</span>
+</div>
+</div>
+</div>
+<script>
+  (function initRbacConsole() {
+    let hasChanges = false;
+    const checkboxes = document.querySelectorAll('.perm-checkbox');
+    const unsavedBadge = document.getElementById('unsaved-badge');
+    const btnSave = document.getElementById('btn-save');
+    const btnCancel = document.getElementById('btn-cancel');
+    const toast = document.getElementById('toast');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+    const roleCards = document.querySelectorAll('.role-card');
+
+    function showNotification(title, msg) {
+      if (!toast) return;
+      toastTitle.textContent = title;
+      toastDesc.textContent = msg;
+      toast.classList.remove('translate-y-12', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-12', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', (e) => {
+        hasChanges = true;
+        const parentLabel = cb.closest('label');
+        const iconContainer = parentLabel.querySelector('span');
+        const icon = iconContainer.querySelector('.material-symbols-outlined');
+
+        if (cb.checked) {
+          iconContainer.className = 'w-8 h-8 rounded-lg bg-tertiary-container text-tertiary-fixed-dim flex items-center justify-center shadow-xs transition-transform active:scale-90';
+          icon.textContent = 'check';
+        } else {
+          iconContainer.className = 'w-8 h-8 rounded-lg bg-surface-container text-outline flex items-center justify-center shadow-xs transition-transform active:scale-90';
+          icon.textContent = 'close';
+        }
+
+        if (unsavedBadge) {
+          unsavedBadge.innerHTML = '<span class="text-error font-bold tracking-wide">● Ada perubahan izin yang belum diterapkan!</span>';
+        }
+      });
+    });
+
+    if (btnSave) {
+      btnSave.addEventListener('click', () => {
+        hasChanges = false;
+        if (unsavedBadge) {
+          unsavedBadge.textContent = 'Semua perubahan berhasil disinkronisasi ke PostgreSQL & Redis Engine.';
+        }
+        showNotification('Kebijakan Akses Diterapkan', 'Matriks RBAC diperbarui. Sesi akun terkait telah di-refresh secara aman.');
+      });
+    }
+
+    if (btnCancel) {
+      btnCancel.addEventListener('click', () => {
+        if (hasChanges) {
+          showNotification('Dibatalkan', 'Perubahan izin dikembalikan ke konfigurasi tersimpan sebelumnya.');
+          setTimeout(() => {
+            window.location.reload();
+          }, 800);
+        } else {
+          showNotification('Tidak Ada Perubahan', 'Status konfigurasi telah sinkron dengan server.');
+        }
+      });
+    }
+
+    roleCards.forEach(card => {
+      card.addEventListener('click', () => {
+        roleCards.forEach(c => {
+          c.classList.remove('ring-2', 'ring-secondary');
+        });
+        card.classList.add('ring-2', 'ring-secondary');
+        const role = card.getAttribute('data-role');
+        showNotification('Peran Dipilih: ' + role.toUpperCase(), 'Matriks difokuskan ke skema otoritas peran ini.');
+      });
+    });
+
+    const btnAudit = document.getElementById('btn-audit');
+    if (btnAudit) {
+      btnAudit.addEventListener('click', () => {
+        showNotification('Audit Kriptografis Dimulai', 'Memverifikasi HMAC dan integritas riwayat log pengubahan hak akses...');
+      });
+    }
+
+    const btnPolicy = document.getElementById('btn-policy');
+    if (btnPolicy) {
+      btnPolicy.addEventListener('click', () => {
+        showNotification('Validasi SPBE Berjalan', 'Kesesuaian dengan Permen PANRB No. 59/2020: 100% Terpenuhi.');
+      });
+    }
+
+    const btnNewRole = document.getElementById('btn-new-role');
+    if (btnNewRole) {
+      btnNewRole.addEventListener('click', () => {
+        showNotification('Form Buat Peran Baru', 'Membuka modal konfigurasi peran kustom (Custom Role Builder)...');
+      });
+    }
+  })();
+</script></main></div></body></html>

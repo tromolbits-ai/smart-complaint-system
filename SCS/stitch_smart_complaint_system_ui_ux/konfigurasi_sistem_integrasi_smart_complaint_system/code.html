@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#254872","primary":"#002549","on-primary":"#ffffff","tertiary-fixed-dim":"#60d9d3","secondary-fixed":"#cfe5ff","on-tertiary":"#ffffff","surface-dim":"#cbdbf5","primary-fixed-dim":"#a8c8fa","secondary":"#00629d","surface-container-high":"#dce9ff","on-secondary":"#ffffff","tertiary-container":"#004240","primary-fixed":"#d4e3ff","surface-tint":"#3f608c","on-primary-container":"#86a6d6","on-secondary-fixed":"#001d33","on-surface-variant":"#43474f","error-container":"#ffdad6","on-background":"#0b1c30","on-secondary-container":"#004c7b","outline":"#73777f","tertiary":"#002a29","surface-bright":"#f8f9ff","inverse-primary":"#a8c8fa","on-tertiary-fixed-variant":"#00504d","surface-variant":"#d3e4fe","on-error-container":"#93000a","outline-variant":"#c3c6d0","error":"#ba1a1a","secondary-fixed-dim":"#98cbff","secondary-container":"#7abeff","background":"#f8f9ff","on-tertiary-fixed":"#00201f","inverse-surface":"#213145","surface-container":"#e5eeff","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","on-surface":"#0b1c30","on-tertiary-container":"#34b6b1","primary-container":"#163b65","tertiary-fixed":"#7ef5ef","on-secondary-fixed-variant":"#004a77","surface-container-highest":"#d3e4fe","on-error":"#ffffff","on-primary-fixed":"#001c3a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","space-md":"1rem","gutter":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","space-sm":"0.5rem"},"fontFamily":{"headline-sm":["Inter"],"headline-xl":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl-mobile":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"label-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto"><div class="p-space-lg bg-surface-container-low"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-headline-sm text-headline-sm"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">admin_panel_settings</span></div><div><span class="font-label-lg text-label-lg font-bold text-primary block leading-none">LaporBDL</span><span class="font-label-sm text-label-sm text-secondary font-medium tracking-wide uppercase mt-space-xs block">SUPER ADMIN v2.4 Ent.</span></div></div></div><nav class="px-space-md py-space-lg flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><div class="px-space-sm pt-space-xs pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">PENGATURAN PENGGUNA &amp; AKSES</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manajemen-pengguna-warga" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-label-lg text-label-lg">Pengguna Warga</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manajemen-admin-staf-opd" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-label-lg text-label-lg">Admin &amp; Staf OPD</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="peran-hak-akses" href="#"><span class="material-symbols-outlined text-[20px]">shield_person</span><span class="font-label-lg text-label-lg">Peran &amp; Hak Akses</span></a><div class="px-space-sm pt-space-md pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">MASTER DATA &amp; LAYANAN</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kategori-taksonomi-aduan" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-lg text-label-lg">Kategori &amp; Taksonomi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manajemen-perangkat-daerah-opd" href="#"><span class="material-symbols-outlined text-[20px]">domain</span><span class="font-label-lg text-label-lg">Perangkat Daerah / OPD</span></a><div class="px-space-sm pt-space-md pb-space-xs font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">SISTEM &amp; AUDIT</div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="konfigurasi-sistem-integrasi" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Konfigurasi &amp; Integrasi</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="log-aktivitas-jejak-audit" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Log &amp; Jejak Audit</span></a></nav></div><div class="p-space-md bg-surface-container-low m-space-md rounded-xl"><div class="flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">PostGIS DB</span><span class="font-label-sm text-label-sm font-semibold text-tertiary-fixed-dim bg-tertiary-container px-space-sm py-0.5 rounded-full">Terkoneksi</span></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Auto Backup</span><span class="font-label-sm text-label-sm font-medium text-secondary">Aktif (02:00)</span></div><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Uptime Server</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">99.98%</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 z-40 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><div class="h-9 px-space-sm rounded bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-semibold text-primary">PEMDA BD. LAMPUNG</div><span class="text-outline text-label-sm font-label-sm">×</span><div class="h-9 px-space-sm rounded bg-surface-container flex items-center justify-center font-label-sm text-label-sm font-semibold text-primary">UNIV TEKNOKRAT</div></div><div class="h-8 w-px bg-surface-container-high"></div><div><span class="font-headline-sm text-headline-sm text-primary block leading-tight font-bold">Smart Complaint System</span><span class="font-label-sm text-label-sm text-on-surface-variant block">Super Admin Console &amp; Tata Kelola Sistem Kota Bandar Lampung</span></div></div><div class="flex-1 max-w-xl flex items-center gap-space-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full h-11 pl-10 pr-space-md bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-container-lowest" placeholder="Cari pengguna, role, modul, atau log audit..." type="text"/></div><div class="flex items-center gap-space-xs shrink-0"><div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold">SPBE TLS 1.3</span></div><a class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold hover:bg-error hover:text-on-error transition-colors" href="tel:112"><span class="material-symbols-outlined text-[16px]">sos</span><span>112</span></a></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><span class="hidden xl:inline font-medium">Secure Env</span></div><div class="relative"><button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><span class="absolute 0 top-0 right-0 w-4 h-4 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold">5</span></div><div class="h-8 w-px bg-surface-container-high"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right"><span class="font-label-md text-label-md font-bold text-primary block leading-tight">Dra. Rahayu S.T., M.Kom</span><span class="font-label-sm text-label-sm text-on-surface-variant block">Super Admin Utama / Sekda Diskominfotik</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-5rem)] p-space-lg"><div class="flex flex-col w-full">
+<!-- Top Bar / Breadcrumb & Status Ribbon -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-outline mb-space-xs font-label-sm text-label-sm">
+<span>SISTEM &amp; AUDIT</span>
+<span>/</span>
+<span class="text-primary font-semibold">KONFIGURASI SISTEM &amp; INTEGRASI</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Konfigurasi Sistem &amp; Integrasi SPBE</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mt-space-xs">
+        Pusat pengaturan global aplikasi Smart Complaint System, parameter batas SLA kota, integrasi API SP4N-LAPOR!, gateway WhatsApp/SMS, peta geospasial GIS, serta protokol keamanan.
+      </p>
+</div>
+<!-- Global CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="h-11 px-space-md rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-colors shadow-sm" id="btnBackup" onclick="triggerBackupAction()">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Cadangkan Konfigurasi (Backup JSON)</span>
+</button>
+<button class="h-11 px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-lg text-label-lg flex items-center gap-space-xs transition-colors shadow-sm" id="btnHealthCheck" onclick="runHealthCheck()">
+<span class="material-symbols-outlined text-[18px]">ecg_heart</span>
+<span>Uji Koneksi Seluruh API (Health Check)</span>
+</button>
+<button class="h-11 px-space-lg rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg flex items-center gap-space-xs transition-all shadow-md" id="btnSaveConfig" onclick="saveConfiguration()">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Simpan Semua Perubahan</span>
+</button>
+</div>
+</div>
+<!-- Live Diagnostic Summary Banner -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Kepatuhan SPBE Kota</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Indeks 4.38</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary-container px-space-xs py-0.5 rounded-full inline-block mt-space-xs">Predikat Memuaskan</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Integrasi SP4N Sync</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">Sinkron Aktif</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-space-xs">Siklus tiap 5 Menit</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">sync</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">WA Gateway Balance</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">84,200 Kuota</span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary-container px-space-xs py-0.5 rounded-full inline-block mt-space-xs">Meta Green Badge</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">mark_chat_read</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Keamanan &amp; Enkripsi</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">AES-256 / 2FA</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-space-xs">Zero-Trust Intra VPN</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">security</span>
+</div>
+</div>
+</div>
+<!-- Interactive Tab Navigation -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs mb-space-lg" role="tablist">
+<button class="tab-button h-11 px-space-lg rounded-lg font-label-lg text-label-lg whitespace-nowrap flex items-center gap-space-xs bg-primary text-on-primary font-bold transition-all shadow-sm" id="tab-btn-umum" onclick="switchTab('tab-umum')">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span>1. Umum &amp; Kebijakan Kota</span>
+</button>
+<button class="tab-button h-11 px-space-lg rounded-lg font-label-lg text-label-lg whitespace-nowrap flex items-center gap-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" id="tab-btn-integrasi" onclick="switchTab('tab-integrasi')">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+<span>2. Integrasi SP4N &amp; Pusat Data</span>
+</button>
+<button class="tab-button h-11 px-space-lg rounded-lg font-label-lg text-label-lg whitespace-nowrap flex items-center gap-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" id="tab-btn-notifikasi" onclick="switchTab('tab-notifikasi')">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>3. Notifikasi &amp; SMS Gateway</span>
+</button>
+<button class="tab-button h-11 px-space-lg rounded-lg font-label-lg text-label-lg whitespace-nowrap flex items-center gap-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" id="tab-btn-geospasial" onclick="switchTab('tab-geospasial')">
+<span class="material-symbols-outlined text-[20px]">map</span>
+<span>4. Geospasial &amp; Peta GIS</span>
+</button>
+<button class="tab-button h-11 px-space-lg rounded-lg font-label-lg text-label-lg whitespace-nowrap flex items-center gap-space-xs bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all" id="tab-btn-keamanan" onclick="switchTab('tab-keamanan')">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+<span>5. Keamanan &amp; Enkripsi</span>
+</button>
+</div>
+<!-- TAB PANELS WRAPPER -->
+<div class="flex flex-col gap-space-lg">
+<!-- Panel 1: Parameter Operasional Pelayanan Publik -->
+<div class="tab-content flex flex-col gap-space-lg" id="tab-umum">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md mb-space-lg gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Parameter Operasional Pelayanan Publik</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Konfigurasi identitas entitas sistem dan parameter penanganan waktu SLA di Kota Bandar Lampung.</p>
+</div>
+<span class="px-space-md py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">SK Walikota No. 045/Diskom/2024</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="space-y-space-xs">
+<label class="block font-label-lg text-label-lg text-primary">Nama Sistem Resmi</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:bg-surface-container-lowest" type="text" value="Smart Complaint System (LaporBDL)"/>
+<p class="font-label-sm text-label-sm text-outline">Nama label pada kop surat respon resmi dan aplikasi warga.</p>
+</div>
+<div class="space-y-space-xs">
+<label class="block font-label-lg text-label-lg text-primary">Tagline Resmi</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none" type="text" value="Layanan Pengaduan Masyarakat Digital"/>
+<p class="font-label-sm text-label-sm text-outline">Ditampilkan di header landing page publik dan footer notifikasi SMS/WA.</p>
+</div>
+<div class="md:col-span-2 space-y-space-xs">
+<label class="block font-label-lg text-label-lg text-primary">Pengelola Utama &amp; Penanggung Jawab Teknis</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none" type="text" value="Diskominfotik Kota Bandar Lampung &amp; Universitas Teknokrat Indonesia"/>
+<p class="font-label-sm text-label-sm text-outline">Kolaborasi tata kelola SPBE bersama Institusi Perguruan Tinggi Terakreditasi.</p>
+</div>
+<div class="space-y-space-xs">
+<label class="block font-label-lg text-label-lg text-primary">Jam Layanan Operasional Sistem</label>
+<div class="relative">
+<select class="w-full h-12 px-space-md appearance-none rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none pr-10">
+<option selected="">Siaga 24 Jam Non-Stop (24/7)</option>
+<option>Hari Kerja (Senin - Jumat 07:30 - 16:00 WIB)</option>
+<option>Hari Kerja + Piket Weekend Bencana</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Penghitungan timer SLA tetap berjalan atau di-pause di luar jam operasional.</p>
+</div>
+<div class="space-y-space-xs">
+<label class="block font-label-lg text-label-lg text-primary">Ambang Batas Verifikasi Awal (SLA Maksimal)</label>
+<div class="flex items-center gap-space-sm">
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none" type="text" value="2 Jam"/>
+<span class="h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center shrink-0">Default SP4N</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Batas waktu admin OPD memverifikasi dan mendisposisikan laporan baru.</p>
+</div>
+<div class="space-y-space-xs">
+<label class="block font-label-lg text-label-lg text-primary">Toleransi Waktu Penanganan Fisik (Standar)</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none" type="text" value="24 Jam (Kategori Standar)"/>
+<p class="font-label-sm text-label-sm text-outline">Berlaku untuk jalan berlubang ringan, lampu jalan mati, sampah liar.</p>
+</div>
+<div class="space-y-space-xs">
+<label class="block font-label-lg text-label-lg text-primary">Toleransi Waktu Penanganan (Kedaruratan Bencana)</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none" type="text" value="4 Jam (Kategori Kedaruratan Bencana)"/>
+<p class="font-label-sm text-label-sm text-outline">Berlaku untuk banjir bandang, pohon tumbang halangi jalan protokol, tanggul jebol.</p>
+</div>
+</div>
+<!-- Automatic Escalation Switch Box -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">notification_important</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-primary block">Eskalasi Otomatis ke Meja Walikota &amp; Sekda</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Kirim notifikasi merah prioritas ke dashboard Walikota Bandar Lampung jika aduan kategori merah mengalami <span class="font-semibold text-error">overdue &gt; 48 Jam</span> tanpa ada progres fisik OPD.
+              </p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="escalationToggle" type="checkbox"/>
+<div class="w-14 h-8 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Panel 2: Integrasi Interoperabilitas Eksternal (API & Webhook) -->
+<div class="tab-content flex flex-col gap-space-lg" id="tab-integrasi">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md mb-space-lg gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Integrasi Interoperabilitas Eksternal (API &amp; Webhook)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Konektivitas dua arah dengan pusat data nasional KemenPANRB, Disdukcapil, dan server geospasial.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-md text-label-md text-primary font-semibold">4 / 4 Gateway Terkoneksi</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- 1. SP4N LAPOR -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center font-bold font-label-md text-label-md">SP4N</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">Integrasi Nasional SP4N-LAPOR!</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary-container px-space-xs py-0.5 rounded-full font-semibold">TERHUBUNG</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">KemenPANRB Hub - Pengaduan warga dari portal nasional otomatis ditarik ke antrean OPD BDL.</p>
+<div class="space-y-space-xs font-label-sm text-label-sm">
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Endpoint:</span>
+<span class="text-primary font-mono text-right truncate ml-2">https://api.lapor.go.id/v3/bdl-gateway</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">API Key Enkripsi:</span>
+<span class="text-secondary font-mono">••••••••••••••••39af</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Sync Interval:</span>
+<span class="text-primary font-semibold">Tiap 5 Menit (Webhook Active)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Latency: 142ms</span>
+<button class="h-9 px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-colors" onclick="pingService('SP4N-LAPOR')">Test Ping</button>
+</div>
+</div>
+<!-- 2. WhatsApp Official -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-tertiary text-on-tertiary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">Gateway WhatsApp Resmi Pemda</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary-container px-space-xs py-0.5 rounded-full font-semibold">META VERIFIED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Pengiriman auto-response tiket, update progress petugas, dan otentikasi 2FA warga via WA.</p>
+<div class="space-y-space-xs font-label-sm text-label-sm">
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Provider Core:</span>
+<span class="text-primary font-semibold">Meta Cloud API / Telkom Enterprise</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Nomor Sender:</span>
+<span class="text-primary font-mono font-semibold">+62 811-7200-112 (Centang Hijau)</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Sisa Saldo Kuota:</span>
+<span class="text-primary font-bold">84,200 Pesan Terkirim</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Status Delivery Rate: 99.4%</span>
+<button class="h-9 px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-colors" onclick="pingService('WhatsApp Gateway')">Test Kirim Sampel</button>
+</div>
+</div>
+<!-- 3. Server Geospasial PostGIS -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-secondary text-on-secondary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">Server Geospasial RTRW &amp; Satelit</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary-container px-space-xs py-0.5 rounded-full font-semibold">AKTIF (PostGIS)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Sinkronisasi batas kecamatan/kelurahan, zonasi rawan bencana, dan layer drainase PU Bappeda.</p>
+<div class="space-y-space-xs font-label-sm text-label-sm">
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Tile Server GIS:</span>
+<span class="text-primary font-mono">GeoServer Pemkot BDL (v2.24)</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Akurasi Toleransi:</span>
+<span class="text-primary font-semibold">≤ 5 Meter Geotagging</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Reverse Geocoding:</span>
+<span class="text-secondary font-medium">Nominatim + BDL POI Database</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cache Hit Rate: 91.2%</span>
+<button class="h-9 px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-colors" onclick="pingService('GIS PostGIS')">Cek Layer Map</button>
+</div>
+</div>
+<!-- 4. SIAK Disdukcapil -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-bold">Sinkronisasi SIAK Kependudukan</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary-container px-space-xs py-0.5 rounded-full font-semibold">INTRA VPN</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Validasi keabsahan NIK e-KTP dan status domisili pelapor guna verifikasi identitas resmi.</p>
+<div class="space-y-space-xs font-label-sm text-label-sm">
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Protokol Keamanan:</span>
+<span class="text-primary font-semibold">VPN Intra-Pemerintah (IP Whitelisted)</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Akses Hak Istimewa:</span>
+<span class="text-secondary font-medium">Read-Only Match Token (No PII Storage)</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest px-space-sm rounded">
+<span class="text-outline">Rata-rata Respon:</span>
+<span class="text-primary font-semibold">89 ms per Query</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Log Query Terakhir: 1 menit lalu</span>
+<button class="h-9 px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-colors" onclick="pingService('SIAK Disdukcapil')">Validasi Sambungan</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 3: Notifikasi & SMS Gateway Preview Sub-tab -->
+<div class="tab-content flex flex-col gap-space-lg" id="tab-notifikasi">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary font-bold mb-space-xs">Template &amp; Saluran Notifikasi Warga</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Atur parameter otomatisasi pengiriman pesan instan WhatsApp &amp; SMS Broadcast ke pelapor dan tim lapangan.</p>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="lg:col-span-2 space-y-space-md">
+<div>
+<label class="block font-label-lg text-label-lg text-primary mb-space-xs">Template Aduan Diterima &amp; Registrasi Tiket (WA)</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest" rows="4">Halo Bpk/Ibu [NAMA_WARGA], laporan Anda #[ID_TIKET] mengenai "[JUDUL_ADUAN]" telah kami terima dan diteruskan ke Dinas [NAMA_OPD]. Estimasi tindakan fisik: [SLA_HOURS] jam. Pantau status via: [LINK_TRACKING]. Terima kasih telah berkontribusi untuk Bandar Lampung.</textarea>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-primary mb-space-xs">Template Penugasan Cepat ke Petugas Lapangan (SMS/WA)</label>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest" rows="3">[DISPOSISI PRIORITAS] Petugas [NAMA_PETUGAS], segera tangani tiket #[ID_TIKET] di lokasi [ALAMAT_LOKASI]. Titik koordinat: [GEO_COORDINATE]. Waktu SLA: [SLA_DEADLINE]. Buka aplikasi LaporBDL Petugas.</textarea>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-primary font-bold block mb-space-sm">Pratinjau Layar Notifikasi HP</span>
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-md text-label-md font-bold text-primary">LaporBDL Official</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Halo Bpk. Ahmad Fauzi, laporan Anda <span class="font-semibold text-secondary">#BDL-2024-8891</span> mengenai "Jalan Berlubang Depan Pasar Way Halim" telah kami verifikasi dan diteruskan ke Dinas Bina Marga BDL.
+                </p>
+<div class="p-space-xs rounded bg-surface-container-low font-label-sm text-label-sm text-secondary font-mono">
+                  https://lapor.bandarlampungkota.go.id/t/8891
+                </div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Status Kuota Broadcast Bulan Ini:</span>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full mt-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 68%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1 block">Terpakai 68% (115,800 / 170,000 kuota)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 4: Geospasial & Peta GIS -->
+<div class="tab-content flex flex-col gap-space-lg" id="tab-geospasial">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<h2 class="font-headline-md text-headline-md text-primary font-bold mb-space-xs">Geospasial, Tile Map, &amp; Batas Administrasi Kota</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Konfigurasi layer shapefile batas 20 kecamatan, 126 kelurahan di Bandar Lampung, dan integrasi tile map satelit.</p>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="lg:col-span-2 space-y-space-md">
+<div class="w-full h-80 rounded-xl bg-surface-container shadow-sm flex items-center justify-center relative overflow-hidden" data-alt="Satellite map view of Bandar Lampung coastal city with topographic overlay and geospatial pins marking urban civic infrastructure" data-location="Bandar Lampung, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsnJAia3mEpItOPzl9Bym0q0VXryt5y38INgwS7MaLU9jto7rlg3duhD6tr2D-nQacSOtebCwEBUM4puJFq5PERBcSl7csEotOnwNKH1q1FSoZ3odtYZhJhGeBeeM34Qr7oZb1CyYPf-x_M1KnTHEnRxQkJUfCfzm7-AwfnRLoS3rUjmtkyWbg99MFVg13m1ZQz4vYWW21F7ypF157d02pxDCMnDfXyGyAn8R_9jbf')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+<div class="absolute top-4 left-4 p-space-sm rounded-lg bg-surface-container-lowest/90 backdrop-blur-md shadow-sm font-label-sm text-label-sm text-primary">
+<span class="font-bold">Layer Aktif:</span> RTRW Bappeda 2024-2034 &amp; Kontur Drainase
+              </div>
+<div class="absolute bottom-4 right-4 p-space-sm rounded-lg bg-surface-container-lowest/90 backdrop-blur-md shadow-sm font-label-sm text-label-sm text-secondary font-semibold">
+                GeoServer EPSG:4326 WGS84
+              </div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="space-y-space-xs">
+<label class="block font-label-sm text-label-sm text-primary font-semibold">Tile Map Provider</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" type="text" value="Mapbox Streets v12 + OpenStreetMap Indonesia"/>
+</div>
+<div class="space-y-space-xs">
+<label class="block font-label-sm text-label-sm text-primary font-semibold">Radius Deteksi Duplikasi Geotag (Meter)</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none" type="number" value="15"/>
+</div>
+</div>
+</div>
+<div class="space-y-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<span class="font-label-lg text-label-lg text-primary font-bold block mb-space-sm">Layer Spasial Tersinkron</span>
+<ul class="space-y-space-sm font-body-sm text-body-sm">
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> 20 Batas Kecamatan BDL</span>
+<span class="font-label-sm text-label-sm text-outline">SHP v3.1</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span> Jaringan Drainase &amp; Sungai</span>
+<span class="font-label-sm text-label-sm text-outline">PU PR BDL</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span> Jalur Lampu Penerangan (PJU)</span>
+<span class="font-label-sm text-label-sm text-outline">Dishub 2024</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-error"></span> Zona Rawan Banjir &amp; Longsor</span>
+<span class="font-label-sm text-label-sm text-outline">BPBD BDL</span>
+</li>
+</ul>
+<button class="w-full mt-space-md h-10 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-highest transition-colors">
+                Unggah Berkas SHP / GeoJSON Baru
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 5: Keamanan & Tata Kelola Sesi -->
+<div class="tab-content flex flex-col gap-space-lg" id="tab-keamanan">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md mb-space-lg gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Keamanan, Tata Kelola Sesi &amp; Kriptografi</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standar kepatuhan kriptografi BSSN (Badan Siber dan Sandi Negara) &amp; Perpres No. 95/2018 tentang SPBE.</p>
+</div>
+<span class="px-space-md py-1 rounded-full bg-tertiary-container text-tertiary-fixed-dim font-label-sm text-label-sm font-semibold">ISO 27001 Compliant</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Password Policy -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">password</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Kebijakan Kata Sandi Staf &amp; Pejabat</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standar ketat kata sandi akun admin dinas untuk memitigasi serangan brute-force.</p>
+<div class="space-y-space-xs pt-space-xs font-label-md text-label-md">
+<label class="flex items-center gap-space-xs text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary" type="checkbox"/>
+<span>Minimal 8 Karakter (Kombinasi Huruf Besar, Angka, &amp; Simbol)</span>
+</label>
+<label class="flex items-center gap-space-xs text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary" type="checkbox"/>
+<span>Masa Berlaku Sandi Maksimal 90 Hari (Wajib Ganti Berkala)</span>
+</label>
+<label class="flex items-center gap-space-xs text-on-surface">
+<input checked="" class="w-4 h-4 rounded text-primary" type="checkbox"/>
+<span>Kunci Akun Otomatis jika Salah Sandi 5 Kali Berturut-turut</span>
+</label>
+</div>
+</div>
+<!-- 2FA Policy -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">phonelink_lock</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Two-Factor Authentication (2FA)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Wajib diaktifkan bagi seluruh operator verifikasi, kepala dinas, dan super admin.</p>
+<div class="pt-space-xs space-y-space-sm">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest">
+<div>
+<span class="font-label-md text-label-md text-primary font-semibold block">Mandatori 2FA Super Admin &amp; OPD</span>
+<span class="font-label-sm text-label-sm text-outline">Menggunakan Google Authenticator / WhatsApp OTP</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-tertiary-fixed-dim bg-tertiary-container px-space-xs py-0.5 rounded-full">WAJIB (ENFORCED)</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest">
+<div>
+<span class="font-label-md text-label-md text-primary font-semibold block">Durasi Session Timeout</span>
+<span class="font-label-sm text-label-sm text-outline">Keluar otomatis jika dashboard ditinggalkan menganggur</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">30 Menit</span>
+</div>
+</div>
+</div>
+<!-- Anti Spam & Rate Limiting -->
+<div class="md:col-span-2 p-space-md rounded-xl bg-surface-container-low space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">shield</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">Perlindungan Anti-Spam &amp; Rate Limiting Publik</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Cloudflare Turnstile Active</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md font-label-md text-label-md">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest space-y-space-xs">
+<span class="text-outline block">Batas Maksimal Aduan:</span>
+<span class="text-primary font-bold font-headline-sm text-headline-sm block">3 Aduan / Hari</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm block">Per NIK terverifikasi e-KTP</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest space-y-space-xs">
+<span class="text-outline block">CAPTCHA Behavior:</span>
+<span class="text-primary font-bold font-headline-sm text-headline-sm block">Zero-Friction</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm block">Verifikasi tanpa klik gambar membingungkan</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest space-y-space-xs">
+<span class="text-outline block">Blokir IP &amp; Geofencing:</span>
+<span class="text-primary font-bold font-headline-sm text-headline-sm block">ID ASN / Whitelist</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm block">Hanya IP regional RI untuk akses portal staf</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom System Status & Audit Meta Bar -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim animate-ping"></div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">
+<span>Terakhir disimpan oleh: </span>
+<strong class="text-primary font-semibold">Dra. Rahayu S.T.</strong>
+<span> pada </span>
+<span class="text-primary font-medium">12 Nov 2024, 09:15 WIB</span>
+<span class="mx-space-xs text-outline">•</span>
+<span>Versi Core: </span>
+<code class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-mono font-bold">v2.4.1-spbe</code>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">encrypted</span> Enkripsi TLS 1.3 Active</span>
+<span class="hidden sm:inline">•</span>
+<span>PostgreSQL 16.2 / PostGIS 3.4</span>
+</div>
+</div>
+<!-- Notification Toast Container for dynamic responses -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-primary text-on-primary shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim" id="toastIcon">check_circle</span>
+<span class="font-label-md text-label-md font-semibold" id="toastMessage">Konfigurasi berhasil disimpan!</span>
+</div>
+</div>
+<script>
+  function switchTab(targetId) {
+    const panels = document.querySelectorAll('.tab-content');
+    panels.forEach(p => p.classList.add('hidden'));
+
+    const currentPanel = document.getElementById(targetId);
+    if (currentPanel) {
+      currentPanel.classList.remove('hidden');
+    }
+
+    const buttons = document.querySelectorAll('.tab-button');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary', 'font-bold', 'shadow-sm');
+      btn.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+
+    const activeBtn = document.getElementById(targetId.replace('tab-', 'tab-btn-'));
+    if (activeBtn) {
+      activeBtn.classList.remove('bg-surface-container-low', 'text-on-surface');
+      activeBtn.classList.add('bg-primary', 'text-on-primary', 'font-bold', 'shadow-sm');
+    }
+  }
+
+  function showToast(message, icon = 'check_circle') {
+    const toast = document.getElementById('toastNotification');
+    const msgElem = document.getElementById('toastMessage');
+    const iconElem = document.getElementById('toastIcon');
+
+    if (toast && msgElem && iconElem) {
+      msgElem.innerText = message;
+      iconElem.innerText = icon;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+  }
+
+  function saveConfiguration() {
+    const saveBtn = document.getElementById('btnSaveConfig');
+    if (saveBtn) {
+      saveBtn.classList.add('opacity-75', 'cursor-wait');
+      saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> <span>Menyimpan ke Core SPBE...</span>';
+    }
+
+    setTimeout(() => {
+      if (saveBtn) {
+        saveBtn.classList.remove('opacity-75', 'cursor-wait');
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">save</span> <span>Simpan Semua Perubahan</span>';
+      }
+      showToast('Seluruh konfigurasi sistem berhasil dimutakhirkan ke database!', 'verified');
+    }, 1200);
+  }
+
+  function runHealthCheck() {
+    const btn = document.getElementById('btnHealthCheck');
+    if (btn) {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> <span>Memeriksa 4 Gateway...</span>';
+    }
+
+    setTimeout(() => {
+      if (btn) {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">ecg_heart</span> <span>Uji Koneksi Seluruh API (Health Check)</span>';
+      }
+      showToast('Health Check Sukses: 4 Gateway Merespon Normal (< 150ms)', 'bolt');
+    }, 1500);
+  }
+
+  function triggerBackupAction() {
+    showToast('Snapshot konfigurasi diunduh: laporbdl-config-20241112.json', 'file_download');
+  }
+
+  function pingService(serviceName) {
+    showToast(`Ping ke ${serviceName}: Terhubung! Waktu respon 88ms`, 'wifi_protected_setup');
+  }
+
+  // Initialize tabs: Ensure all non-active tabs are properly hidden
+  document.addEventListener('DOMContentLoaded', () => {
+    switchTab('tab-umum');
+  });
+</script></main></div></body></html>

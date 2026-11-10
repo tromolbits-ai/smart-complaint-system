@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#004a77","error":"#ba1a1a","tertiary-fixed-dim":"#60d9d3","surface-variant":"#d3e4fe","on-secondary-fixed":"#001d33","secondary-fixed":"#cfe5ff","on-error-container":"#93000a","primary-fixed":"#d4e3ff","on-primary-container":"#86a6d6","on-primary-fixed":"#001c3a","inverse-surface":"#213145","on-secondary-container":"#004c7b","outline":"#73777f","surface-container-highest":"#d3e4fe","surface":"#f8f9ff","surface-container-low":"#eff4ff","on-surface-variant":"#43474f","error-container":"#ffdad6","on-background":"#0b1c30","inverse-primary":"#a8c8fa","secondary-fixed-dim":"#98cbff","on-tertiary-container":"#34b6b1","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#00504d","secondary":"#00629d","outline-variant":"#c3c6d0","surface-container":"#e5eeff","surface-container-high":"#dce9ff","on-tertiary-fixed":"#00201f","on-secondary":"#ffffff","background":"#f8f9ff","primary-container":"#163b65","primary-fixed-dim":"#a8c8fa","secondary-container":"#7abeff","inverse-on-surface":"#eaf1ff","surface-dim":"#cbdbf5","on-tertiary":"#ffffff","surface-bright":"#f8f9ff","on-surface":"#0b1c30","primary":"#002549","surface-tint":"#3f608c","tertiary":"#002a29","on-error":"#ffffff","tertiary-fixed":"#7ef5ef","tertiary-container":"#004240","on-primary-fixed-variant":"#254872"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-lg":"1.5rem","gutter":"1.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem","gutter-mobile":"1rem","margin-mobile":"1rem","margin":"2rem"},"fontFamily":{"body-md":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"headline-xl-mobile":["Inter"],"headline-sm":["Inter"],"label-lg":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="p-space-md border-b border-outline-variant/30"><div class="flex flex-col gap-space-xs mb-space-sm"><div class="px-space-sm py-space-xs rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold">[ LOGO PEMDA BD. LAMPUNG ]</div><div class="px-space-sm py-space-xs rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold">[ LOGO UNIV TEKNOKRAT INDONESIA ]</div></div><div class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">Smart Complaint</div><div class="font-label-sm text-label-sm text-secondary font-medium">Panel Pelayanan Sipil Terpadu</div></div><nav class="flex-1 p-space-sm space-y-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-semibold rounded-xl" data-path="dashboard-warga" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-lg text-label-lg">Dashboard Warga</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="buat-pengaduan" href="#"><span class="material-symbols-outlined text-[20px]">add_notes</span><span class="font-label-lg text-label-lg">Buat Pengaduan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="lacak-pengaduan" href="#"><span class="material-symbols-outlined text-[20px]">troubleshoot</span><span class="font-label-lg text-label-lg">Lacak Pengaduan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="riwayat" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Riwayat & Arsip</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="beranda" href="#"><span class="material-symbols-outlined text-[20px]">public</span><span class="font-label-lg text-label-lg">Portal Publik</span></a></nav><div class="p-space-md border-t border-outline-variant/30 space-y-space-xs"><div class="flex items-center gap-space-xs p-space-sm rounded-lg bg-error-container text-on-error-container font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-error text-[18px]">call</span>Darurat Kota: 112</div><div class="text-center font-label-sm text-label-sm text-on-surface-variant">Diskominfo x Teknokrat © 2025</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface-variant">Wilayah Pelayanan:</span><span class="font-label-lg text-label-lg font-bold text-primary">Pemerintah Kota Bandar Lampung</span></div><div class="flex items-center gap-space-md"><button class="relative p-space-xs rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg font-semibold text-on-surface">Dra. Rahayu</span><span class="font-label-sm text-label-sm text-secondary font-medium">Warga Terverifikasi</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-7xl mx-auto w-full space-y-space-lg">
+<!-- Top Header Banner & Quick Actions -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 -bottom-20 w-52 h-52 bg-tertiary-fixed/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high text-primary font-label-sm text-label-sm rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            Pusat Informasi & Transparansi Sipil
+          </div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Pusat Notifikasi & Pembaruan Layanan</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Pantau riwayat pembaruan status laporan, verifikasi, tanggapan admin OPD, dan penyelesaian secara berkala di Kota Bandar Lampung.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-primary font-label-lg text-label-lg transition-colors" id="mark-all-read-btn" onclick="markAllAsRead()" type="button">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Tandai Semua Sudah Dibaca</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm transition-colors" onclick="document.getElementById('settings-panel').scrollIntoView({behavior: 'smooth'})" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Kanal Siaga (WA/Email)</span>
+</button>
+</div>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mt-space-lg pt-space-md border-t border-outline-variant/20">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold" id="unread-count">3</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Belum Dibaca</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-secondary font-bold">1</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Sedang Dikerjakan</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed/40 flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-tertiary-container font-bold">1</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Terverifikasi Hari Ini</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">avg_time</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">4.2 Jam</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Rata-rata Respon OPD</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Layout: 2 Columns (Content 8 Col, Sidebar Preferences 4 Col) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Filter Tabs & Notifications List -->
+<div class="lg:col-span-8 space-y-space-md">
+<!-- Filter Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 text-nowrap">
+<button class="category-pill active-pill px-space-md py-2 rounded-full font-label-md text-label-md font-semibold bg-primary text-on-primary transition-all" onclick="filterCategory('all', this)" type="button">
+            Semua Notifikasi <span class="ml-1 opacity-80">(5)</span>
+</button>
+<button class="category-pill px-space-md py-2 rounded-full font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" onclick="filterCategory('status', this)" type="button">
+            Pembaruan Status <span class="ml-1 opacity-80">(2)</span>
+</button>
+<button class="category-pill px-space-md py-2 rounded-full font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" onclick="filterCategory('verifikasi', this)" type="button">
+            Verifikasi Laporan <span class="ml-1 opacity-80">(1)</span>
+</button>
+<button class="category-pill px-space-md py-2 rounded-full font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" onclick="filterCategory('tanggapan', this)" type="button">
+            Tanggapan Admin OPD <span class="ml-1 opacity-80">(1)</span>
+</button>
+<button class="category-pill px-space-md py-2 rounded-full font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" onclick="filterCategory('selesai', this)" type="button">
+            Penyelesaian <span class="ml-1 opacity-80">(1)</span>
+</button>
+</div>
+<!-- Notification Feed List -->
+<div class="space-y-space-md" id="notification-feed">
+<!-- 1. Status Change Notification (Unread) -->
+<article class="notification-item unread bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="status">
+<div class="unread-bar absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-on-secondary-fixed-variant shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[26px]">build_circle</span>
+</div>
+<div class="flex-1 min-w-0 space-y-space-xs">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-bold">Pembaruan Status</span>
+<span class="px-space-sm py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold">Sedang Dikerjakan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#BDL-2024-8842</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 15 menit yang lalu
+                  </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Laporan #BDL-2024-8842 telah memasuki tahap pengerjaan fisik</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Dinas Pekerjaan Umum & Penataan Ruang (PUPR) telah menugaskan Regu TRC 02 ke lokasi Jl. ZA Pagar Alam untuk penambalan aspal ambles.
+                </p>
+<!-- Micro progress & field visual -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_shipping</span>
+<div class="font-label-sm text-label-sm">
+<span class="font-semibold text-primary">Regu Lapangan:</span> Armada TRC Unit 02 PUPR Bandar Lampung
+                    </div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Estimasi: 4 Jam Kerja</span>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">troubleshoot</span>
+<span>Lihat Progres Lapangan</span>
+</button>
+<button class="px-space-sm py-2 text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors" onclick="markSingleRead(this)" type="button">
+                    Tandai dibaca
+                  </button>
+</div>
+</div>
+</div>
+</article>
+<!-- 2. Verification Update (Unread) -->
+<article class="notification-item unread bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="verifikasi">
+<div class="unread-bar absolute left-0 top-0 bottom-0 w-1.5 bg-on-tertiary-container"></div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/60 flex items-center justify-center text-on-tertiary-fixed-variant shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[26px]">verified_user</span>
+</div>
+<div class="flex-1 min-w-0 space-y-space-xs">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold">Verifikasi Laporan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#BDL-2024-9012</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 1 jam yang lalu
+                  </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Laporan #BDL-2024-9012 Berhasil Diverifikasi Petugas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Tim verifikator Diskominfo telah memvalidasi bukti foto dan geotag GPS pohon tumbang di Jl. Raden Intan. Laporan segera diteruskan ke BPBD & DLH.
+                </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px]">pin_drop</span>
+<span>Jl. Raden Intan No. 44 (GPS Valid)</span>
+</div>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">photo_library</span>
+<span>3 Foto Terlampir</span>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-primary font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Lihat Tiket</span>
+</button>
+<button class="px-space-sm py-2 text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors" onclick="markSingleRead(this)" type="button">
+                    Tandai dibaca
+                  </button>
+</div>
+</div>
+</div>
+</article>
+<!-- 3. Admin OPD Response (Unread) -->
+<article class="notification-item unread bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="tanggapan">
+<div class="unread-bar absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[26px]">forum</span>
+</div>
+<div class="flex-1 min-w-0 space-y-space-xs">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold">Tanggapan Resmi OPD</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Dinas PUPR</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 2 jam yang lalu
+                  </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Tanggapan Resmi dari Ir. Bambang (Dinas PUPR)</h2>
+<!-- Quote Box Style -->
+<div class="p-space-md rounded-xl bg-surface-container-low border-l-4 border-primary space-y-space-xs my-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Koordinator Lapangan Penanganan Jalan</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+                    “Material hotmix dan armada baby roller telah diberangkatkan dari posko Way Halim. Mohon warga berhati-hati saat melintasi area perbaikan.”
+                  </p>
+</div>
+<div class="pt-space-xs flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Balas / Lihat Percakapan</span>
+</button>
+<button class="px-space-sm py-2 text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors" onclick="markSingleRead(this)" type="button">
+                    Tandai dibaca
+                  </button>
+</div>
+</div>
+</div>
+</article>
+<!-- 4. Resolution Notification (Read) -->
+<article class="notification-item bg-surface-container-lowest/80 rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="selesai">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container flex items-center justify-center text-on-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[26px]">task_alt</span>
+</div>
+<div class="flex-1 min-w-0 space-y-space-xs">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Laporan Selesai</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">Dishub Kota</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#BDL-2024-8510</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">event_available</span> Kemarin, 16:45 WIB
+                  </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Pengaduan #BDL-2024-8510 Dinyatakan Selesai</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Dinas Perhubungan telah menyelesaikan perbaikan Lampu PJU di Gang Masjid Al-Ikhlas. Foto hasil perbaikan telah diunggah dan diverifikasi pengawas lapangan.
+                </p>
+<!-- Comparison Preview / Media Thumbnails -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<img class="w-14 h-14 rounded-lg object-cover" data-alt="Dokumentasi tiang lampu jalan rusak padam malam hari di gang sempit permukiman Bandar Lampung sebelum diperbaiki tim teknisi dinas perhubungan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJSg2M7dUsx7QvOdGI1an9C_G7cGVzBMB5tKHkU5fsZNwbsa_cwMlAeiNkF9tePtiDyfVSnDwBfuE0UTs2Y3ikGWtvBlrmj6XpOJrQn6zOFVWfwmQFUsCQMnackiobCxfI67VwrEIj8YlEpWPXwda4r5Nc8ebsKMsExA8PNoZHcjogmeiQljD4-AZUmMDvzPh9uXoU5G4XXgp52VUYM6Ji4r7VdZLO7v7n8Rb0ArK_"/>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Foto Awal</div>
+<div class="font-label-sm text-label-sm text-error">Lampu Padam & Korsleting</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<img class="w-14 h-14 rounded-lg object-cover" data-alt="Dokumentasi tiang lampu LED penerangan jalan umum menyala terang benderang setelah selesai diganti dan dirapikan oleh regu PJU Dinas Perhubungan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwNIDSR4psl1Cb52__yJvcqb6KZoHlCd8dYfYloKPzE5iqMnHp9ToTTSfj24uj_RbomrA9XnDODawBKcivyUrZK8ldogZ-GcXMAWOX_BL5K2ECGuiOPxezpQfJv4FoGjnUMkWWye4AKBZi8L83G69g7Zl8QeelMfeOwfPbCcUb-yx2IO8-ONUd8TYQRJBCw11dE5_18vlU7AhhqhjT-Y53unAv1xg6a6uzU-nmLyN1"/>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Foto Hasil Perbaikan</div>
+<div class="font-label-sm text-label-sm text-on-tertiary-container font-medium">Lampu LED Menyala Normal</div>
+</div>
+</div>
+</div>
+<!-- Rating CTA Container -->
+<div class="mt-space-sm p-space-md rounded-xl bg-surface-container-high/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div>
+<div class="font-label-lg text-label-lg font-bold text-primary">Beri Penilaian Layanan (IKM)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Bantu tingkatkan mutu respon instansi Pemerintah Kota Bandar Lampung.</div>
+</div>
+<!-- 5 Star interactive snippet -->
+<div class="flex items-center gap-1 text-secondary" id="star-rating">
+<button class="star-btn hover:scale-125 transition-transform" onclick="setRating(1)" type="button"><span class="material-symbols-outlined text-[24px]">star</span></button>
+<button class="star-btn hover:scale-125 transition-transform" onclick="setRating(2)" type="button"><span class="material-symbols-outlined text-[24px]">star</span></button>
+<button class="star-btn hover:scale-125 transition-transform" onclick="setRating(3)" type="button"><span class="material-symbols-outlined text-[24px]">star</span></button>
+<button class="star-btn hover:scale-125 transition-transform" onclick="setRating(4)" type="button"><span class="material-symbols-outlined text-[24px]">star</span></button>
+<button class="star-btn hover:scale-125 transition-transform" onclick="setRating(5)" type="button"><span class="material-symbols-outlined text-[24px]">star</span></button>
+</div>
+</div>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">rate_review</span>
+<span>Beri Penilaian & Ulasan Layanan (Bintang 1-5)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-high text-primary hover:bg-surface-container font-label-lg text-label-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">compare</span>
+<span>Lihat Foto Sebelum / Sesudah</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- 5. General System Alert -->
+<article class="notification-item bg-surface-container-lowest/80 rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden" data-category="status">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container flex items-center justify-center text-on-error-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[26px]">campaign</span>
+</div>
+<div class="flex-1 min-w-0 space-y-space-xs">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">Peringatan Publik</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Diskominfo & BMKG</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> 2 hari yang lalu
+                  </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Peringatan Siaga Cuaca Ekstrem Diskominfo & BMKG</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                  Warga dihimbau waspada potensi genangan di kawasan Teluk Betung dan Way Halim sore ini. Saluran darurat 112 siaga 24 jam bebas pulsa.
+                </p>
+<div class="pt-space-xs flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-error text-on-error font-label-sm text-label-sm font-bold shadow-sm" href="tel:112">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Hubungi Hotline 112</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Layanan Tanggap Bencana Terintegrasi</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- Right Column: Notification Preferences & SLA Settings Sidebar -->
+<aside class="lg:col-span-4 space-y-space-md" id="settings-panel">
+<!-- Channels Configuration Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">Preferensi Saluran</h3>
+</div>
+<span class="px-space-sm py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Multi-Kanal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tentukan jalur komunikasi aktif untuk pembaruan status laporan darurat dan reguler.</p>
+<!-- Toggle 1: WhatsApp -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-semibold text-primary">Notifikasi WhatsApp</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">+62 812-****-4890</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Toggle 2: Email Ringkasan -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-semibold text-primary">Email Ringkasan</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">rahayu.pemda@gmail.com</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- Toggle 3: Push Browser Web -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-semibold text-primary">Push Browser Web</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Izin desktop aktif</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<!-- SLA Guard Card Feature -->
+<div class="p-space-md rounded-xl bg-surface-container-high/60 space-y-space-xs mt-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">timer</span>
+<div class="font-label-lg text-label-lg font-bold">Layanan Pengingat SLA 24 Jam</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Sistem akan otomatis mengirimkan peringatan eskalasi ke Ombudsman & Inspektorat Kota jika pengaduan belum direspon oleh OPD teknis dalam waktu 24 jam.
+            </p>
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Status: Pengawasan Aktif</span>
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container"></span>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-colors" onclick="saveSettingsFeedback()" type="button">
+            Simpan Perubahan
+          </button>
+</div>
+<!-- City Service Desk Contact Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-bold text-primary">Bantuan & Helpdesk Warga</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Layanan Pengaduan Terpadu</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mengalami kendala sinkronisasi notifikasi pengaduan Anda? Hubungi meja kendali Diskominfo Bandar Lampung.
+          </p>
+<div class="pt-space-xs space-y-space-xs font-label-sm text-label-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Jam Operasional:</span>
+<span class="font-semibold text-on-surface">Senin - Jumat (08.00 - 16.00)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>WhatsApp Admin:</span>
+<span class="font-semibold text-secondary">0811-7200-112</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  function markAllAsRead() {
+    const unreadItems = document.querySelectorAll('.notification-item.unread');
+    unreadItems.forEach(item => {
+      item.classList.remove('unread');
+      const bar = item.querySelector('.unread-bar');
+      if (bar) bar.remove();
+    });
+    const unreadCount = document.getElementById('unread-count');
+    if (unreadCount) {
+      unreadCount.textContent = '0';
+    }
+    const btn = document.getElementById('mark-all-read-btn');
+    if (btn) {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Semua Terbaca</span>';
+      btn.classList.add('opacity-70', 'pointer-events-none');
+    }
+  }
+
+  function markSingleRead(buttonElement) {
+    const card = buttonElement.closest('.notification-item');
+    if (card && card.classList.contains('unread')) {
+      card.classList.remove('unread');
+      const bar = card.querySelector('.unread-bar');
+      if (bar) bar.remove();
+      buttonElement.remove();
+      
+      const unreadCount = document.getElementById('unread-count');
+      if (unreadCount) {
+        let current = parseInt(unreadCount.textContent, 10);
+        if (current > 0) {
+          unreadCount.textContent = (current - 1).toString();
+        }
+      }
+    }
+  }
+
+  function filterCategory(category, clickedBtn) {
+    const pills = document.querySelectorAll('.category-pill');
+    pills.forEach(p => {
+      p.classList.remove('bg-primary', 'text-on-primary');
+      p.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+    });
+
+    clickedBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+    clickedBtn.classList.add('bg-primary', 'text-on-primary');
+
+    const items = document.querySelectorAll('.notification-item');
+    items.forEach(item => {
+      if (category === 'all') {
+        item.style.display = 'block';
+      } else {
+        const itemCat = item.getAttribute('data-category');
+        if (itemCat === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      }
+    });
+  }
+
+  function setRating(ratingValue) {
+    const stars = document.querySelectorAll('#star-rating .star-btn span');
+    stars.forEach((star, index) => {
+      if (index < ratingValue) {
+        star.style.fontVariationSettings = "'FILL' 1";
+      } else {
+        star.style.fontVariationSettings = "'FILL' 0";
+      }
+    });
+  }
+
+  function saveSettingsFeedback() {
+    alert('Preferensi notifikasi multi-kanal Anda berhasil diperbarui di sistem Kota Bandar Lampung.');
+  }
+</script></main></div></body></html>

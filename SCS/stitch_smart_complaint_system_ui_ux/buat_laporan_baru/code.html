@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#e2e7ff", "outline-variant": "#bdc9c6", "on-secondary-container": "#006f66", "primary-fixed": "#9cf2e8", "on-error-container": "#93000a", "secondary": "#006a61", "on-primary-fixed-variant": "#00504a", "inverse-on-surface": "#eef0ff", "on-secondary-fixed-variant": "#005049", "tertiary-fixed-dim": "#adc6ff", "secondary-container": "#86f2e4", "surface-variant": "#dae2fd", "surface-tint": "#006a63", "on-tertiary-fixed": "#001a42", "error-container": "#ffdad6", "on-background": "#131b2e", "secondary-fixed-dim": "#6bd8cb", "on-tertiary-container": "#e4eaff", "tertiary-container": "#0165d8", "on-tertiary-fixed-variant": "#004395", "on-secondary": "#ffffff", "secondary-fixed": "#89f5e7", "on-primary-container": "#a3faef", "surface-container-highest": "#dae2fd", "surface-container-low": "#f2f3ff", "surface-container": "#eaedff", "background": "#faf8ff", "tertiary": "#004eaa", "surface-container-lowest": "#ffffff", "on-primary": "#ffffff", "primary-container": "#0f766e", "inverse-surface": "#283044", "on-primary-fixed": "#00201d", "primary": "#005c55", "tertiary-fixed": "#d8e2ff", "on-tertiary": "#ffffff", "inverse-primary": "#80d5cb", "on-secondary-fixed": "#00201d", "surface": "#faf8ff", "surface-bright": "#faf8ff", "on-surface-variant": "#3e4947", "on-error": "#ffffff", "error": "#ba1a1a", "surface-dim": "#d2d9f4", "primary-fixed-dim": "#80d5cb", "outline": "#6e7977", "on-surface": "#131b2e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "margin-md": "1.25rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-md": "1rem", "margin": "1rem", "gutter-sm": "0.75rem" }, "fontFamily": { "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="LaporBDL Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrDJBFZKIH2-lpLWa2x7XtCSNeydWrNLQxnby7aAhXIdj8kF6_7PQLeOtjgFdREDEa2OS60APAJ_YVIVwt82fw-hvL6gRG02Gq2Ef_bYaEJGakRlA5cKz9HjAXPmQomf0qI-9dGwriFSQ-rZ9SXInop9SpkpuqjS8ko3RWz0YuH8Q1I_q7cCBe-7qKqnTQLmymMU8W6lpLcLQvSOWDWqkoh3t27w8dAGyY6-yicu_uhe8w"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold truncate leading-none">Kota Bandar Lampung</span><h1 class="font-title-md text-title-md text-on-surface font-bold tracking-tight truncate leading-tight">Buat Laporan</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Pemberitahuan" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-11 h-11 flex items-center justify-center p-0.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWYzB_CQ4-XyCFVU1KB00F5wOVMPd2tKgAFoEekoXiz8M-w2-aimBuFXwgOerJrAWkldKK9Kx-wpegbP4N1ev8_mLN-RZkfvr-bMT8CixeLeQSKQoGzQz-R1HYQ2ip5waiuRrapS9aCuyJgs-CPKxvnNGdOdq2KrxY51zaNTKDuvxkPTK7nV7B_rzHJKDMWDjoPlTmMbnpOq_4J61h_CsUVaVXz2J3P9xB3q5-PZyt"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Progress Tracker -->
+<section class="px-gutter pt-space-md pb-space-sm bg-surface-container-low">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Langkah 2 dari 3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">65% Lengkap</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden mb-space-xs">
+<div class="h-full bg-primary-container rounded-full w-[66%] transition-all duration-500 ease-out"></div>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Rincian &amp; Bukti Lokasi</h2>
+</section>
+<!-- Form Canvas -->
+<form class="flex flex-col gap-space-lg px-gutter pt-space-md" id="complaintForm" onsubmit="event.preventDefault(); handleSubmit();">
+<!-- Category Pill Display -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">water_damage</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">Kategori Terpilih</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold truncate">Jalan &amp; Saluran Air</span>
+</div>
+</div>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors flex-shrink-0" type="button">
+        Ubah
+      </button>
+</div>
+<!-- Field 1: Judul Laporan -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold" for="reportTitle">
+          Judul Laporan <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-outline" id="titleCounter">0/70</span>
+</div>
+<div class="relative bg-surface-container-lowest rounded-xl shadow-sm">
+<input class="w-full px-space-md py-space-md font-body-md text-body-md text-on-surface placeholder:text-outline bg-transparent rounded-xl outline-none transition-shadow focus:ring-2 focus:ring-primary-container" id="reportTitle" maxlength="70" oninput="document.getElementById('titleCounter').innerText = this.value.length + '/70'" placeholder="Contoh: Aspal amblas di depan SMPN 2 Bandar Lampung" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: Deskripsi Keluhan -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold" for="reportDescription">
+        Deskripsi Keluhan <span class="text-error">*</span>
+</label>
+<div class="relative bg-surface-container-lowest rounded-xl shadow-sm">
+<textarea class="w-full p-space-md font-body-md text-body-md text-on-surface placeholder:text-outline bg-transparent rounded-xl outline-none resize-none transition-shadow focus:ring-2 focus:ring-primary-container" id="reportDescription" placeholder="Jelaskan detail masalah, perkiraan waktu terjadi, dan bahaya bagi pengguna jalan..." required="" rows="4"></textarea>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">info</span>
+        Bantu petugas dengan mencantumkan ciri fisik atau patokan terdekat.
+      </p>
+</div>
+<!-- Field 3: Evidence Upload Box -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold">
+          Unggah Bukti Foto / Video <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 dari 5 terunggah</span>
+</div>
+<!-- Upload Interactive Area -->
+<div class="flex flex-col items-center justify-center p-space-lg rounded-xl bg-surface-container-low shadow-inner text-center cursor-pointer transition-transform active:scale-[0.99] select-none" id="dropZone" onclick="simulateCapture()" role="button" tabindex="0">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[28px]">add_a_photo</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Ambil Foto Langsung atau Unggah</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[280px]">
+          Maks. 5 file (JPG, PNG, MP4 maks. 25MB). Koordinat GPS kamera otomatis terbaca.
+        </p>
+<div class="mt-space-sm inline-flex items-center gap-1.5 px-space-md py-1 bg-surface-container-lowest rounded-full shadow-sm text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Geotagging Aktif
+        </div>
+</div>
+<!-- Attached Evidence Previews -->
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs" id="previewList">
+<!-- Thumbnail 1 -->
+<div class="relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col group" id="thumb-1">
+<div class="relative h-28 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up documentary photo of a severe pothole and collapsed asphalt on a city street in Bandar Lampung, surrounded by yellow safety caution tape under natural daylight, raw realism photo style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwsg0xVgaBI0mIJNZvxtp4zd9ynxTWteNtACUus21sQJXeFX9gbDNd7L06iXWQTwbnf2hgrbOSSD6mEGZVUR-M_3qOdviQ0Nu6gf-ztIFO0gYxorlfXNsUifnlOCUEWaGCZ_JZwXfPCf5RuWAS3hJ70ksNBa_Sz7T2tB825QU-R1qmFmAW3WJO6Riu32D2AwUsdUNKhi4s7iBXFnbeDWQBcS6xLuuNJ0Tu0a0KqabR"/>
+<button aria-label="Hapus Foto 1" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-inverse-surface/80 text-inverse-on-surface flex items-center justify-center backdrop-blur-sm active:scale-90 transition-transform" onclick="removeThumbnail('thumb-1')" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-inverse-surface/75 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm">
+              Foto #1
+            </div>
+</div>
+<div class="p-space-xs flex items-center gap-1 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-[14px] text-secondary">explore</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">-5.4024, 105.2638</span>
+</div>
+</div>
+<!-- Thumbnail 2 -->
+<div class="relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col group" id="thumb-2">
+<div class="relative h-28 w-full bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Wide shot of an overflowing stormwater drain clogged with debris alongside a public sidewalk in Bandar Lampung tropical morning environment, documentary civic reporting photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSjc9f_HdmNBtkVPgoTZAGUP33V98oKOukaoxrA5a2UJ8dnFl-e8UCB1uJJ28WldWx3BFOuNrrc1e3ogubHlsEHamBZUyZX5TMDETmgcacNopbZq24adl8lX97bLsK_AsMWVfdYriMwgOdRjalAq1nWuF6xjFs6ysgMfJ66oT9v4zuq7SjHyfH0FboHFDeGvMOlqqqIkdqajlFvtqMYLZO5E3MxFIRPPhaZtIIvoLs"/>
+<button aria-label="Hapus Foto 2" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-inverse-surface/80 text-inverse-on-surface flex items-center justify-center backdrop-blur-sm active:scale-90 transition-transform" onclick="removeThumbnail('thumb-2')" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute bottom-2 left-2 px-1.5 py-0.5 rounded bg-inverse-surface/75 backdrop-blur-sm text-inverse-on-surface font-label-sm text-label-sm">
+              Foto #2
+            </div>
+</div>
+<div class="p-space-xs flex items-center gap-1 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-[14px] text-secondary">explore</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">-5.4025, 105.2639</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Field 4: Interactive Geolocation Map Preview -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold">
+          Lokasi Kejadian
+        </label>
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Akurat (± 3m)
+        </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Map Card -->
+<div class="w-full h-44 bg-cover bg-center relative" data-location="Jl. Teuku Umar No. 45, Kedaton, Bandar Lampung" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNakF8vfBQn27RyHlJLPP64T3Qt7YPQH2OrKDLcq07Wcudmv1oJvJXfNMXZYrrHAJlgQ_CRMcnbm2JWYvXmk9z3sual6ehwcSuLfLgiEz-3Lz5XrRBz9JqolV1bk-8hLxD_Z4XD8cpL-oLFnCmwwVtI4JvTBeECNeQP0tAtCtNWhliWezTfWm1BO91O7y2910plBAvkaPgwS2ky-ZE3uGMsSPEsDk2WpPL2db_7MA_')">
+<!-- Floating Map Overlay Badge -->
+<div class="absolute top-3 left-3 px-space-sm py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface shadow-sm flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-error">pin_drop</span>
+            Titik Koordinat Geotag
+          </div>
+<!-- Pulsing Map Pin Animation -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-8 h-8 rounded-full bg-error/30 animate-ping"></span>
+<div class="w-10 h-10 rounded-full bg-error text-on-error flex items-center justify-center shadow-lg transform -translate-y-2">
+<span class="material-symbols-outlined text-[22px]">location_on</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Address Bar Details -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-lowest">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary flex-shrink-0 mt-0.5">apartment</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface font-bold leading-snug">
+                Jl. Teuku Umar No. 45
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+                Kelurahan Sidodadi, Kec. Kedaton, Kota Bandar Lampung
+              </span>
+</div>
+</div>
+<button class="w-full py-space-sm px-space-md rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 active:bg-surface-container-high transition-colors" onclick="triggerGpsAdjustment()" type="button">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+            Sesuaikan Titik Lokasi GPS
+          </button>
+</div>
+</div>
+</div>
+<!-- Privacy & Identity Toggles Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">Privasi Pengirim</h3>
+<!-- Toggle 1: Anonim -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0 flex-1">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold cursor-pointer" for="toggleAnonymous">
+            Laporkan sebagai Anonim
+          </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Nama lengkap Anda disembunyikan dari publik namun tetap tersimpan aman untuk verifikasi internal petugas.
+          </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggleAnonymous" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+<div class="w-full h-px bg-surface-container"></div>
+<!-- Toggle 2: Rahasiakan Detail -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0 flex-1">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold cursor-pointer" for="togglePrivateDetail">
+            Rahasiakan Rincian Kejadian
+          </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Laporan hanya dapat ditinjau oleh OPD teknis terkait dan tidak dipublikasikan pada linimasa warga.
+          </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0 mt-1">
+<input class="sr-only peer" id="togglePrivateDetail" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+<!-- Legal & Accountability Disclaimer Box -->
+<div class="p-space-md rounded-xl bg-error-container text-on-error-container flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-error flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">
+        gavel
+      </span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md font-bold">Peringatan Akuntabilitas Publik</span>
+<p class="font-body-sm text-body-sm leading-relaxed">
+          Laporan palsu atau konten bernuansa fitnah dapat dikenakan sanksi hukum sesuai ketentuan <strong>Perda Kota Bandar Lampung No. 04/2021</strong>.
+        </p>
+</div>
+</div>
+<!-- Civic Guarantee Seal -->
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant py-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-sm text-label-sm">Dikelola Resmi oleh Diskominfotik Kota Bandar Lampung</span>
+</div>
+<!-- Bottom Submission Area -->
+<div class="mt-space-sm">
+<button class="w-full h-12 bg-primary-container text-on-primary rounded-xl font-title-sm text-title-sm font-bold flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform" id="submitBtn" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Kirim Laporan Pengaduan</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-outline mt-space-sm">
+        Dengan menekan tombol, Anda mengonfirmasi keaslian informasi lokasi dan bukti.
+      </p>
+</div>
+</form>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 max-w-xs w-full px-4 py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl flex items-center gap-3 opacity-0 pointer-events-none transition-all duration-300 z-50" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Foto bukti berhasil diperbarui</span>
+</div>
+</div>
+<script>
+  function showToast(message, icon = 'check_circle') {
+    const toast = document.getElementById('toastNotification');
+    const msgEl = document.getElementById('toastMessage');
+    const iconEl = document.getElementById('toastIcon');
+    if (!toast || !msgEl || !iconEl) return;
+    
+    msgEl.innerText = message;
+    iconEl.innerText = icon;
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+    }, 2800);
+  }
+
+  function removeThumbnail(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.style.transform = 'scale(0.8)';
+      el.style.opacity = '0';
+      el.style.transition = 'all 0.25s ease';
+      setTimeout(() => {
+        el.remove();
+        showToast('Bukti foto berhasil dihapus', 'delete');
+      }, 250);
+    }
+  }
+
+  function simulateCapture() {
+    showToast('Kamera aktif: Geotagging otomatis terpasang', 'photo_camera');
+  }
+
+  function triggerGpsAdjustment() {
+    showToast('GPS dikalibrasi ulang ke posisi akurat', 'gps_fixed');
+  }
+
+  function handleSubmit() {
+    const title = document.getElementById('reportTitle').value.trim();
+    const desc = document.getElementById('reportDescription').value.trim();
+    
+    if (!title || !desc) {
+      showToast('Mohon lengkapi judul dan deskripsi keluhan', 'warning');
+      return;
+    }
+
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[20px]">sync</span> Mengunggah Berkas...`;
+    
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check</span> Laporan Terkirim!`;
+      btn.classList.remove('bg-primary-container');
+      btn.classList.add('bg-secondary');
+      showToast('Laporan berhasil didaftarkan ke sistem!', 'task_alt');
+    }, 1500);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-gutter-sm max-w-lg mx-auto"><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-on-surface-variant transition-all hover:text-on-surface" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Beranda</span></a><a aria-current="page" class="flex flex-col items-center justify-center relative -top-3 group text-primary font-bold" data-path="buat-laporan" href="#"><div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_8px_20px_-4px_rgba(15,118,110,0.4)] transition-transform group-active:scale-95"><span class="material-symbols-outlined text-[28px]">add_circle</span></div><span class="font-label-sm text-label-sm text-primary font-semibold mt-1">Lapor</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-on-surface-variant transition-all hover:text-on-surface" data-path="tugas-petugas" href="#"><span class="material-symbols-outlined text-[24px]">assignment</span><span class="font-label-sm text-label-sm text-center">Tugas</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-16 text-on-surface-variant transition-all hover:text-on-surface" data-path="analitik" href="#"><span class="material-symbols-outlined text-[24px]">analytics</span><span class="font-label-sm text-label-sm text-center">Analitik</span></a></div></nav></body></html>
